@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="NEXXUS IT Club" />
+    <title>Home — NEXXUS</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container nav-inner">
+        <a class="logo" href="index.html"><span class="logo-dot"></span>NEXXUS</a
+        ><button class="menu-btn" type="button">☰</button>
+        <div class="nav-links">
+          <a class="active" href="index.html">HOME</a
+          ><a class="" href="groups.html">GROUPS</a
+          ><a class="" href="events.html">EVENTS</a
+          ><a class="" href="projects.html">LAB</a
+          ><a class="" href="gallery.html">GALLERY</a
+          ><a class="" href="contact.html">CONTACT</a
+          ><a class="admin-link" href="/admin/login.html">ADMIN PANEL</a>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <section class="hero">
+        <canvas id="network"></canvas>
+        <div class="hero-content">
+          <div class="eyebrow">SYSTEM // NEXXUS // ONLINE</div>
+          <h1>NEXXUS</h1>
+          <h2 id="homeTagline">Where Ideas Connect. Where Technology Evolves.</h2>
+          <p id="homeAbout">
+            A student-driven IT community bringing together developers,
+            designers, strategists and creators to build things that matter.
+          </p>
+          <div class="actions">
+            <a class="btn primary" href="groups.html">EXPLORE NEXXUS →</a
+            ><a class="btn" href="events.html">VIEW EVENTS</a>
+          </div>
+          <div class="status"><i></i>NEXXUS NETWORK OPERATIONAL</div>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <div class="section-head reveal">
+            <div>
+              <div class="kicker">THE IDEA</div>
+              <h2>One network.<br />Many minds.</h2>
+            </div>
+            <p>
+              NEXXUS is built around connection — between people, disciplines,
+              ideas and technology.
+            </p>
+          </div>
+          <div class="network-box reveal">
+            <svg viewBox="0 0 700 380">
+              <g class="line">
+                <path
+                  d="M350 190L170 95M350 190L530 95M350 190L170 285M350 190L530 285M170 95L530 95M170 285L530 285"
+                />
+              </g>
+              <circle class="node" cx="350" cy="190" r="48" />
+              <circle class="node" cx="170" cy="95" r="28" />
+              <circle class="node" cx="530" cy="95" r="28" />
+              <circle class="node" cx="170" cy="285" r="28" />
+              <circle class="node" cx="530" cy="285" r="28" />
+              <text class="node-label" x="350" y="194" text-anchor="middle">
+                NEXXUS
+              </text>
+              <text class="node-label" x="170" y="99" text-anchor="middle">
+                TECH
+              </text>
+              <text class="node-label" x="530" y="99" text-anchor="middle">
+                PR
+              </text>
+              <text class="node-label" x="170" y="289" text-anchor="middle">
+                MGMT
+              </text>
+              <text class="node-label" x="530" y="289" text-anchor="middle">
+                CREATIVE
+              </text>
+            </svg>
+          </div>
+          <div class="stat-row reveal" id="homeStats">
+            <div class="stat">
+              <strong data-count="0">0</strong><span>ACTIVE MEMBERS</span>
+            </div>
+            <div class="stat">
+              <strong data-count="0">0</strong><span>EVENTS</span>
+            </div>
+            <div class="stat">
+              <strong data-count="0">0</strong><span>PROJECTS</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <div class="section-head reveal">
+            <div>
+              <div class="kicker">WHAT WE DO</div>
+              <h2>Build beyond<br />the classroom.</h2>
+            </div>
+          </div>
+          <div class="grid three">
+            <div class="card reveal">
+              <span class="number">01</span>
+              <h3>Build</h3>
+              <p>
+                Turn ideas into websites, applications, AI systems and
+                experimental projects.
+              </p>
+            </div>
+            <div class="card reveal">
+              <span class="number">02</span>
+              <h3>Learn</h3>
+              <p>
+                Workshops, technical sessions and peer-to-peer learning keep the
+                network moving.
+              </p>
+            </div>
+            <div class="card reveal">
+              <span class="number">03</span>
+              <h3>Compete</h3>
+              <p>
+                Hackathons, challenges and competitions give members a place to
+                test their skills.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div
+        class="container"
+        style="
+          display: flex;
+          justify-content: space-between;
+          gap: 20px;
+          flex-wrap: wrap;
+        "
+      >
+        <span class="mono">NEXXUS // IT CLUB</span
+        ><span>Where ideas connect. Where technology evolves.</span
+        ><span>© 2026 NEXXUS</span>
+      </div>
+    </footer>
+    <div class="toast"></div>
+    <script src="../js/api.js"></script>
+    <script src="../js/main.js"></script>
+  </body>
+</html>

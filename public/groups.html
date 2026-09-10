@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="NEXUS IT Club" />
+    <title>Groups & Members — NEXUS</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container nav-inner">
+        <a class="logo" href="index.html"><span class="logo-dot"></span>NEXUS</a
+        ><button class="menu-btn" type="button">☰</button>
+        <div class="nav-links">
+          <a class="" href="index.html">HOME</a
+          ><a class="active" href="groups.html">GROUPS</a
+          ><a class="" href="events.html">EVENTS</a
+          ><a class="" href="projects.html">LAB</a
+          ><a class="" href="gallery.html">GALLERY</a
+          ><a class="" href="contact.html">CONTACT</a
+          ><a class="admin-link" href="/admin/login.html">ADMIN PANEL</a>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <header class="page-hero">
+        <div class="container reveal">
+          <div class="kicker">02 // NETWORK</div>
+          <h1>GROUPS &<br />MEMBERS</h1>
+          <p>
+            The people behind the network. Explore NEXUS divisions and the
+            students who make them happen.
+          </p>
+        </div>
+      </header>
+
+      <section>
+        <div class="container">
+          <div class="filters reveal">
+            <button class="filter active" data-filter="all">ALL</button>
+            <button class="filter" data-filter="tech">TECH</button>
+            <button class="filter" data-filter="management">MANAGEMENT</button>
+            <button class="filter" data-filter="pr">PR</button>
+            <button class="filter" data-filter="creative">CREATIVE</button>
+            <button class="filter" data-filter="student-coordinator">STUDENT COORDINATOR</button>
+          </div>
+
+          <div class="org-chart" id="membersGrid">
+            <div class="empty">Loading members...</div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div
+        class="container"
+        style="
+          display: flex;
+          justify-content: space-between;
+          gap: 20px;
+          flex-wrap: wrap;
+        "
+      >
+        <span class="mono">NEXUS // IT CLUB</span
+        ><span>Where ideas connect. Where technology evolves.</span
+        ><span>© 2026 NEXUS</span>
+      </div>
+    </footer>
+
+    <div class="toast"></div>
+    <script src="../js/api.js"></script>
+    <script src="../js/main.js"></script>
+  </body>
+</html>

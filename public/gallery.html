@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="NEXUS IT Club" />
+    <title>Gallery — NEXUS</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container nav-inner">
+        <a class="logo" href="index.html"><span class="logo-dot"></span>NEXUS</a
+        ><button class="menu-btn" type="button">☰</button>
+        <div class="nav-links">
+          <a class="" href="index.html">HOME</a
+          ><a class="" href="groups.html">GROUPS</a
+          ><a class="" href="events.html">EVENTS</a
+          ><a class="" href="projects.html">LAB</a
+          ><a class="active" href="gallery.html">GALLERY</a
+          ><a class="" href="contact.html">CONTACT</a
+          ><a class="admin-link" href="/admin/login.html">ADMIN PANEL</a>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <header class="page-hero">
+        <div class="container reveal">
+          <div class="kicker">ARCHIVE</div>
+          <h1>GALLERY</h1>
+          <p>
+            A visual archive of NEXUS events, workshops, late-night builds and
+            moments in the network.
+          </p>
+        </div>
+      </header>
+      <section>
+        <div class="container">
+          <div class="gallery" id="galleryList">
+            <div class="gallery-placeholder">Loading gallery...</div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div class="lightbox">
+      <div class="lightbox-box">
+        <button class="close" type="button">×</button>
+        <div class="kicker">NEXUS // ARCHIVE</div>
+        <h2 id="lightboxTitle">Gallery</h2>
+        <img id="lightboxImage" alt="" hidden />
+        <div id="lightboxFallback" class="gallery-placeholder" style="margin-top: 20px">
+          YOUR IMAGE WILL APPEAR HERE
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div
+        class="container"
+        style="
+          display: flex;
+          justify-content: space-between;
+          gap: 20px;
+          flex-wrap: wrap;
+        "
+      >
+        <span class="mono">NEXUS // IT CLUB</span
+        ><span>Where ideas connect. Where technology evolves.</span
+        ><span>© 2026 NEXUS</span>
+      </div>
+    </footer>
+    <div class="toast"></div>
+    <script src="../js/api.js"></script>
+    <script src="../js/main.js"></script>
+  </body>
+</html>

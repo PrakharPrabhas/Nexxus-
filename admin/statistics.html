@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>NEXUS Admin — Statistics</title>
+    <link rel="stylesheet" href="../css/admin.css" />
+  </head>
+  <body data-page="statistics">
+    <div class="layout">
+      <aside class="sidebar">
+        <a class="brand" href="dashboard.html"
+          ><div class="logo">N</div>
+          <div>
+            <h2>NEXUS</h2>
+            <small>ADMIN PANEL</small>
+          </div></a
+        >
+        <nav class="nav">
+          <a data-page="dashboard" href="dashboard.html"
+            ><span class="icon">⌂</span><span>Dashboard</span></a
+          >
+          <a data-page="members" href="members.html"
+            ><span class="icon">◉</span><span>Members</span></a
+          >
+          <a data-page="events" href="events.html"
+            ><span class="icon">◫</span><span>Events</span></a
+          >
+          <a data-page="gallery" href="gallery.html"
+            ><span class="icon">▧</span><span>Gallery</span></a
+          >
+          <a data-page="projects" href="projects.html"
+            ><span class="icon">◇</span><span>Projects</span></a
+          >
+          <a data-page="statistics" href="statistics.html"
+            ><span class="icon">▥</span><span>Statistics</span></a
+          >
+          <a data-page="settings" href="settings.html"
+            ><span class="icon">⚙</span><span>Settings</span></a
+          >
+        </nav>
+        <div class="sidebar-bottom">
+          <button class="btn full" data-logout>Logout</button>
+        </div>
+      </aside>
+      <main class="main">
+        <header class="topbar">
+          <div>
+            <h1>Statistics</h1>
+            <p class="subtitle">
+              Update the numerical highlights displayed across NEXUS.
+            </p>
+          </div>
+          <button class="btn primary" data-modal-open="statModal">
+            + Add Statistic
+          </button>
+        </header>
+        <div id="statsGrid" class="grid stats"></div>
+        <div class="modal" id="statModal">
+          <div class="modal-box">
+            <div class="modal-head">
+              <h3>Statistic</h3>
+              <button class="close" data-modal-close>×</button>
+            </div>
+            <form id="statForm">
+              <div class="modal-body">
+                <input type="hidden" name="id" />
+                <div class="form-grid">
+                  <div class="field">
+                    <label>Label</label><input name="label" required />
+                  </div>
+                  <div class="field">
+                    <label>Value</label><input name="value" required />
+                  </div>
+                  <div class="field">
+                    <label>Suffix</label>
+                    <input
+                      name="suffix"
+                      placeholder="+, %, etc."
+                    />
+                  </div>
+
+                  <div class="field">
+                    <label>Status</label>
+                    <select name="status">
+                      <option>Active</option>
+                      <option>Inactive</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-foot">
+                <button type="button" class="btn" data-modal-close>
+                  Cancel</button
+                ><button class="btn primary">Save Statistic</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </main>
+    </div>
+    <div id="toast" class="toast"></div>
+    <script src="../js/api.js"></script>
+    <script src="../js/admin.js"></script>
+  </body>
+</html>

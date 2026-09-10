@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>NEXUS Admin Login</title>
+    <link rel="stylesheet" href="../css/admin.css" />
+  </head>
+  <body data-page="login">
+    <div class="login-page">
+      <div class="card login-box">
+        <div class="logo login-logo">N</div>
+        <h1>NEXUS ADMIN</h1>
+        <p>Control center for your club website</p>
+        <form id="loginForm" class="login-form">
+          <div class="field">
+            <label>Email</label
+            ><input
+              name="email"
+              type="email"
+              placeholder="admin@nexus.com"
+              required
+            />
+          </div>
+          <div class="field">
+            <label>Password</label
+            ><input
+              name="password"
+              type="password"
+              placeholder="••••••••"
+              required
+            />
+          </div>
+          <button class="btn primary" type="submit">Enter Dashboard</button>
+        </form>
+        <div class="login-note">
+          Sign in with an authorized NEXUS admin account.
+        </div>
+      </div>
+    </div>
+    <div id="toast" class="toast"></div>
+    <script src="../js/api.js"></script>
+    <script src="../js/admin.js"></script>
+  </body>
+</html>

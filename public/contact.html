@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="NEXUS IT Club" />
+    <title>Contact — NEXUS</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container nav-inner">
+        <a class="logo" href="index.html"><span class="logo-dot"></span>NEXUS</a
+        ><button class="menu-btn" type="button">☰</button>
+        <div class="nav-links">
+          <a class="" href="index.html">HOME</a
+          ><a class="" href="groups.html">GROUPS</a
+          ><a class="" href="events.html">EVENTS</a
+          ><a class="" href="projects.html">LAB</a
+          ><a class="" href="gallery.html">GALLERY</a
+          ><a class="active" href="contact.html">CONTACT</a
+          ><a class="admin-link" href="/admin/login.html">ADMIN PANEL</a>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <header class="page-hero">
+        <div class="container reveal">
+          <div class="kicker">CONNECTION</div>
+          <h1>CONNECT<br />TO NEXUS</h1>
+          <p>
+            Have an idea, want to collaborate, or want to become part of the
+            network? Open a channel.
+          </p>
+        </div>
+      </header>
+      <section>
+        <div class="container contact-grid">
+          <div class="card reveal">
+            <div class="kicker">OPEN CHANNEL</div>
+            <h2 style="font-size: 2.5rem">Let's build something.</h2>
+            <p style="margin-top: 15px">
+              Reach out through any channel below. Replace the demo links with
+              your official club accounts.
+            </p>
+            <div style="margin-top: 25px" id="contactChannels">
+              <div class="contact-link">
+                <div><small>EMAIL</small><br /><span data-contact="email">Loading...</span></div>
+                <button id="copyEmail" class="btn" type="button">COPY</button>
+              </div>
+              <a
+                class="contact-link"
+                data-contact-link="instagram"
+                href="#"
+                target="_blank"
+                ><div><small>INSTAGRAM</small><br /><span data-contact="instagram">Loading...</span></div>
+                <span>↗</span></a
+              ><a
+                class="contact-link"
+                data-contact-link="linkedin"
+                href="#"
+                target="_blank"
+                ><div><small>LINKEDIN</small><br /><span data-contact="linkedin">Loading...</span></div>
+                <span>↗</span></a
+              ><a
+                class="contact-link"
+                data-contact-link="github"
+                href="#"
+                target="_blank"
+                ><div><small>GITHUB</small><br /><span data-contact="github">Loading...</span></div>
+                <span>↗</span></a
+              >
+              <div class="contact-link" data-contact-phone>
+                <div><small>PHONE</small><br /><span data-contact="phone">Loading...</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="card reveal">
+            <div class="kicker">NEXUS // STATUS</div>
+            <h3>NETWORK ONLINE</h3>
+            <p>
+              We are always looking for builders, organizers, designers and
+              people with ideas.
+            </p>
+            <div
+              class="stat"
+              style="
+                margin-top: 25px;
+                border: 1px solid var(--line);
+                border-radius: 15px;
+              "
+            >
+              <strong>∞</strong><span>IDEAS WELCOME</span>
+            </div>
+            <div style="margin-top: 25px">
+              <span class="number">LOCATION</span>
+              <p style="margin-top: 7px">Your University Campus<br />India</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div
+        class="container"
+        style="
+          display: flex;
+          justify-content: space-between;
+          gap: 20px;
+          flex-wrap: wrap;
+        "
+      >
+        <span class="mono">NEXUS // IT CLUB</span
+        ><span>Where ideas connect. Where technology evolves.</span
+        ><span>© 2026 NEXUS</span>
+      </div>
+    </footer>
+    <div class="toast"></div>
+    <script src="../js/api.js"></script>
+    <script src="../js/main.js"></script>
+  </body>
+</html>

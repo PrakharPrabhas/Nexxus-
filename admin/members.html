@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>NEXUS Admin — Members</title>
+    <link rel="stylesheet" href="../css/admin.css" />
+  </head>
+  <body data-page="members">
+    <div class="layout">
+      <aside class="sidebar">
+        <a class="brand" href="dashboard.html"
+          ><div class="logo">N</div>
+          <div>
+            <h2>NEXUS</h2>
+            <small>ADMIN PANEL</small>
+          </div></a
+        >
+        <nav class="nav">
+          <a data-page="dashboard" href="dashboard.html"
+            ><span class="icon">⌂</span><span>Dashboard</span></a
+          >
+          <a data-page="members" href="members.html"
+            ><span class="icon">◉</span><span>Members</span></a
+          >
+          <a data-page="events" href="events.html"
+            ><span class="icon">◫</span><span>Events</span></a
+          >
+          <a data-page="gallery" href="gallery.html"
+            ><span class="icon">▧</span><span>Gallery</span></a
+          >
+          <a data-page="projects" href="projects.html"
+            ><span class="icon">◇</span><span>Projects</span></a
+          >
+          <a data-page="statistics" href="statistics.html"
+            ><span class="icon">▥</span><span>Statistics</span></a
+          >
+          <a data-page="settings" href="settings.html"
+            ><span class="icon">⚙</span><span>Settings</span></a
+          >
+        </nav>
+        <div class="sidebar-bottom">
+          <button class="btn full" data-logout>Logout</button>
+        </div>
+      </aside>
+      <main class="main">
+        <header class="topbar">
+          <div>
+            <h1>Members</h1>
+            <p class="subtitle">Add, edit and remove NEXUS team members.</p>
+          </div>
+          <button class="btn primary" data-modal-open="memberModal">
+            + Add Member
+          </button>
+        </header>
+        <div class="card">
+          <div class="card-body">
+            <div class="toolbar">
+              <input
+                id="memberSearch"
+                class="search"
+                placeholder="Search members..."
+              />
+            </div>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Member</th>
+                    <th>Role</th>
+                    <th>Group</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                  </tr>
+                </thead>
+                <tbody id="memberRows"></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="modal" id="memberModal">
+          <div class="modal-box">
+            <div class="modal-head">
+              <h3>Member Details</h3>
+              <button class="close" data-modal-close>×</button>
+            </div>
+            <form id="memberForm">
+              <div class="modal-body">
+                <input type="hidden" name="id" />
+                <div class="form-grid">
+                  <div class="field">
+                    <label>Name *</label><input name="name" required />
+                  </div>
+                  <div class="field">
+                    <label>Role *</label>
+                    <select name="role" required>
+                      <option value="President">President</option>
+                      <option value="Vice-President">Vice-President</option>
+                      <option value="Lead">Lead</option>
+                      <option value="Member" selected>Member</option>
+                    </select>
+                  </div>
+                  <div class="field">
+                    <label>Group</label>
+                    ><select name="group">
+                      <option>Tech</option>
+                      <option>Management</option>
+                      <option>PR</option>
+                      <option>Creative</option>
+                      <option>Student Coordinator</option>
+                    </select>
+                  </div>
+                  <div class="field">
+                    <label>Status</label
+                    ><select name="status">
+                      <option>Active</option>
+                      <option>Inactive</option>
+                    </select>
+                  </div>
+                  <div class="field full-row">
+                    <label>Email</label><input name="email" type="email" />
+                  </div>
+                  <div class="field full-row">
+                    <label>Photo URL</label
+                    ><input
+                      name="photo"
+                      type="url"
+                      placeholder="https://..."
+                    />
+                  </div>
+                  <div class="field full-row">
+                    <label>Description</label
+                    ><textarea name="description"></textarea>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-foot">
+                <button type="button" class="btn" data-modal-close>
+                  Cancel</button
+                ><button class="btn primary">Save Member</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </main>
+    </div>
+    <div id="toast" class="toast"></div>
+    <script src="../js/api.js"></script>
+    <script src="../js/admin.js"></script>
+  </body>
+</html>

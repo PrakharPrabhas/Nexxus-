@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>NEXUS Admin — Dashboard</title>
+    <link rel="stylesheet" href="../css/admin.css" />
+  </head>
+  <body data-page="dashboard">
+    <div class="layout">
+      <aside class="sidebar">
+        <a class="brand" href="../admin/dashboard.html"
+          ><div class="logo">N</div>
+          <div>
+            <h2>NEXUS</h2>
+            <small>ADMIN PANEL</small>
+          </div></a
+        >
+        <nav class="nav">
+          <a data-page="dashboard" href="../admin/dashboard.html"
+            ><span class="icon">⌂</span><span>Dashboard</span></a
+          >
+          <a data-page="members" href="../admin/members.html"
+            ><span class="icon">◉</span><span>Members</span></a
+          >
+          <a data-page="events" href="../admin/events.html"
+            ><span class="icon">◫</span><span>Events</span></a
+          >
+          <a data-page="gallery" href="../admin/gallery.html"
+            ><span class="icon">▧</span><span>Gallery</span></a
+          >
+          <a data-page="projects" href="../admin/projects.html"
+            ><span class="icon">◇</span><span>Projects</span></a
+          >
+          <a data-page="statistics" href="../admin/statistics.html"
+            ><span class="icon">▥</span><span>Statistics</span></a
+          >
+          <a data-page="settings" href="../admin/settings.html"
+            ><span class="icon">⚙</span><span>Settings</span></a
+          >
+        </nav>
+        <div class="sidebar-bottom">
+          <button class="btn full" data-logout>Logout</button>
+        </div>
+      </aside>
+      <main class="main">
+        <header class="topbar">
+          <div>
+            <h1>Dashboard</h1>
+            <p class="subtitle">
+              Welcome back. Manage the NEXUS website from one place.
+            </p>
+          </div>
+          <div class="actions">
+            <a class="btn" href="../public/index.html" target="_blank"
+              >View Website ↗</a
+            >
+          </div>
+        </header>
+        <section class="grid stats">
+          <div class="card stat">
+            <span class="stat-label">Members</span>
+            <div id="membersCount" class="stat-value">0</div>
+            <span class="stat-note">Database records</span>
+          </div>
+          <div class="card stat">
+            <span class="stat-label">Events</span>
+            <div id="eventsCount" class="stat-value">0</div>
+            <span class="stat-note">Upcoming + past</span>
+          </div>
+          <div class="card stat">
+            <span class="stat-label">Projects</span>
+            <div id="projectsCount" class="stat-value">0</div>
+            <span class="stat-note">Club projects</span>
+          </div>
+          <div class="card stat">
+            <span class="stat-label">Gallery</span>
+            <div id="galleryCount" class="stat-value">0</div>
+            <span class="stat-note">Media records</span>
+          </div>
+        </section>
+        <section class="grid two">
+          <div class="card">
+            <div class="card-head"><h3>Quick Actions</h3></div>
+            <div class="card-body actions">
+              <a class="btn primary" href="../admin/members.html">+ Add Member</a
+              ><a class="btn" href="../admin/events.html">+ Create Event</a
+              ><a class="btn" href="../admin/gallery.html">+ Add Media</a
+              ><a class="btn" href="../admin/projects.html">+ Add Project</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-head"><h3>Recent Activity</h3></div>
+            <div class="card-body">
+              <div id="activityList" class="activity"></div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <div id="toast" class="toast"></div>
+    <script src="../js/api.js"></script>
+    <script src="../js/admin.js"></script>
+  </body>
+</html>
