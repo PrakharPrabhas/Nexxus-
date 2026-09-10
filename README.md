@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # NEXUS — IT Club Platform
 
 > Where ideas connect. Where technology evolves.
@@ -62,3 +63,7 @@ Public Website
  Authentication
       ↓
  Admin Dashboard
+=======
+# Nexxus-
+NEXXUS — A student-driven community platform for innovation, technology, events, projects, and collaboration.
+>>>>>>> a7a9c58901d1bbfc8c1d1ceea2c7f70c82e477db
