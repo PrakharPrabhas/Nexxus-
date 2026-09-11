@@ -1,4 +1,4 @@
-const API_BASE = "http://localhost:5000/api";
+const API_BASE = "https://nexxus-backend-uw89.onrender.com";
 const AUTH_KEY = "nexus_admin_token";
 const ADMIN_KEY = "nexus_admin_user";
 
